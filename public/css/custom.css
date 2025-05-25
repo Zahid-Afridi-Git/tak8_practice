@@ -1,0 +1,2578 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/*====================================================================================
+ZIA ULLAH
+======================================================================================*/
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-weight: 400;
+  overflow-x: hidden;
+  display: inline-block;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4a4a4a;
+}
+
+p {
+  color: #737373;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 !important;
+}
+
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button,
+input[type="submit"] {
+  transition: all ease-in-out 0.2s !important;
+  -moz-transition: all ease-in-out 0.2s !important;
+  -ms-transition: all ease-in-out 0.2s !important;
+  -o-transition: all ease-in-out 0.2s !important;
+  -webkit-transition: all ease-in-out 0.2s !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+section {
+  padding-top: 70px;
+}
+
+.Head_2,
+.Head_3,
+.Head_4,
+.Head_5 {
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.Head_1 {
+  font-size: 20px;
+  color: #ff9900;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Head_2 {
+  font-size: 42px;
+}
+
+.Head_3 {
+  font-size: 28px;
+}
+
+.Head_4 {
+  font-size: 26px;
+}
+
+.Head_5 {
+  font-size: 24px;
+}
+
+.Head_6 {
+  font-size: 20px;
+  
+  
+}
+.Head_7 {
+  font-size: 20px;
+  color:#df2935;
+  padding-top:5px;
+}
+.Pra_1,
+.Pra_2 {
+  color: #737373;
+}
+
+.Pra_1 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.Pra_x {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.Pra_2 {
+  font-size: 18px;
+}
+
+.BtnFill,
+.BtnBorder,
+.BtnFillY {
+  font-size: 16px;
+  padding: 12px 40px;
+  border-radius: 4px;
+  border: 2px solid #e02935;
+}
+
+.BtnBorderY {
+  font-size: 16px;
+  padding: 12px 40px;
+  border-radius: 4px;
+  border: 2px solid #ff9900;
+}
+
+.BtnFill,
+.BtnFillY {
+  color: #fff;
+  background-color: #e02935;
+}
+
+.BtnFill:hover {
+  color: #e02935;
+  background-color: transparent;
+}
+
+.BtnBorder {
+  color: #ff9900;
+}
+
+.BtnBorder:hover {
+  color: #fff;
+  background-color: #ff9900;
+}
+
+.BtnBorderY {
+  color: #ff9900;
+  background-color: #fff;
+}
+
+.BtnBorderY:hover {
+  color: #fff;
+  background-color: #ff9900;
+}
+
+.CustomHeading {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.CustomHeading h2 {
+  padding-bottom: 10px;
+}
+
+.CustomHeading h3 {
+  padding-bottom: 5px;
+}
+
+.CustomHeading1 {
+  text-align: center;
+
+}
+
+.CustomHeading1 h2 {
+  padding-bottom: 10px;
+}
+
+.CustomHeading1 h3 {
+  padding-bottom: 5px;
+}
+
+.main-search {
+  display: flex;
+}
+
+.main-search .InputField {
+  width: 50%;
+}
+
+.main-search .InputField:last-child {
+  margin-left: 10px;
+}
+
+.Stepper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.Stepper li {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-right: 100px;
+  flex-direction: column;
+}
+
+.Stepper li::before {
+  top: 28px;
+  content: "";
+  height: 2px;
+  right: 20px;
+  width: 60px;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #737373;
+}
+
+.Stepper li:last-child {
+  padding-right: 0 !important;
+}
+
+.Stepper li:last-child::before {
+  content: none;
+}
+
+.Stepper li.Fill {
+  color: #ff9900;
+}
+
+.Stepper li.Fill {
+  color: #ff9900;
+}
+
+.Stepper li.Fill::before {
+  background-color: #ff9900;
+}
+
+.Stepper li.Fill span {
+  background-color: #ff9900;
+  border: 1px solid #ff9900;
+  cursor: pointer;
+}
+
+.Stepper li.Current span {
+  background-color: #fff;
+  border: 1px solid #df2935;
+  cursor: pointer;
+}
+
+.Stepper li.Fill span svg path {
+  fill: #fff;
+}
+
+.Stepper li.Current span svg path {
+  fill: #e02935;
+}
+
+.Stepper li.Fill h6 {
+  color: #ff9900;
+  font-weight: 600;
+}
+
+.Stepper li.Current h6 {
+  color: #e02935;
+  font-weight: 600;
+}
+
+.Stepper li.Active span {
+  border: 1px solid #ff9900;
+}
+
+.Stepper li.Active span svg path {
+  fill: #ff9900;
+}
+
+.Stepper li.Active h6 {
+  color: #ff9900;
+}
+
+.Stepper li span {
+  width: 100px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #737373;
+}
+
+.Stepper li span svg path {
+  fill: #737373;
+}
+
+.Stepper li h6 {
+  font-size: 20px;
+  color: #4a4a4a;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/*====================================================================================
+HOME PAGE
+======================================================================================*/
+.Header {
+  padding: 20px 0;
+}
+
+.Header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header .container .DesktopMenu {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header .container .DesktopMenu li a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.Header .container .DesktopMenu li a:hover,
+.Header .container .DesktopMenu li a.active {
+  color: #ff9900;
+}
+
+.Header .container .MobileMenu {
+  display: none;
+}
+
+.HomeSection {
+  padding: 0;
+}
+
+.HomeSection h1 {
+  font-size: 50px;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.HomeSection h1 span {
+  color: #ff9900;
+}
+
+.HomeSection .Button {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.HomeSection .Button a {
+  display: block;
+  margin-right: 15px;
+}
+
+.HomeSection .Button a:last-child {
+  margin-right: 0;
+}
+
+.HomeSection .col-md-7 img:first-child {
+  display: block;
+}
+
+.HomeSection .col-md-7 img:last-child {
+  display: none;
+}
+
+.SearchSection {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #FFC107 0%, #ff9900 100%);
+}
+
+.SearchForm {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 82, 159, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  align-items: end;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e02935;
+  margin-bottom: 0.5rem;
+}
+
+.form-label i {
+  color: #FFC107;
+  font-size: 1.1rem;
+}
+
+.input-container {
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.input-container:hover {
+  background: #fff;
+}
+
+.form-select,
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+
+.form-select:focus,
+.form-control:focus {
+  outline: none;
+  border-color: #e02935;
+  box-shadow: 0 0 0 3px rgba(0, 82, 159, 0.1);
+}
+
+.datetime-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.time-input {
+  position: relative;
+  width: 100%;
+}
+
+.time-input select {
+  padding-right: 2.5rem;
+  /* Extra space for icon */
+  appearance: none;
+}
+
+.time-input::after {
+  content: "⏷";
+  /* Unicode Clock Symbol */
+
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgb(27, 26, 26);
+  font-size: 16px;
+
+}
+
+.search-btn {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 25%;
+  padding: 16px;
+  background: #e02935;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.search-btn:hover {
+  background: #e02935;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 82, 159, 0.2);
+}
+
+@media (max-width: 768px) {
+
+  .toast-container {
+    position: fixed;
+
+    width: 90% !important;
+    right: 5% !important;
+    left: 5% !important;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    z-index: 1000;
+    background-color: #e05b64;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px #ff9900;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.5s forwards, fadeOut 0.5s 4.5s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+
+
+  }
+
+  .cardField {
+    /* display: block !important; */
+    margin: 0px !important;
+  }
+
+  .SearchForm {
+    padding: 0.5rem;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .datetime-group {
+    display: flex;
+    width: 100% !important;
+    grid-template-columns: 1fr;
+  }
+}
+
+.LogoSection .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LogoSection .container img {
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.LogoSection .container img:hover {
+  opacity: 1;
+}
+
+.CarSection .Button {
+  width: auto;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.CarBox {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 201, 12, 0.5);
+}
+
+.CarBox .Image {
+  height: 280px;
+  display: flex;
+  padding: 32px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+  background-color: #f2f2f2;
+}
+
+.CarBox .Image img {
+  width: 100%;
+}
+
+.CarBox .Image .Tag {
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.CarBox .Image .Tag.Red {
+  color: #df2935;
+  background-color: rgba(223, 41, 53, 0.2);
+}
+
+.CarBox .Image .Tag.Yellow {
+  color: #ff9900;
+  background-color: rgba(255, 153, 0, 0.3);
+}
+
+.CarBox .Content {
+  padding: 10px;
+}
+
+.CarBox .Content .Heading {
+
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+
+.CarBox .Content .Heading .Features {
+  width: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CarBox .Content .PriceMain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CarBox .Content .Price {
+  text-align: center;
+}
+
+.CarBox .Content .Price h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff9900;
+}
+
+.CarBox .Content .Price h5 span {
+  font-size: 16px;
+  color: #a6a6a6;
+  font-weight: 500;
+}
+
+.CarBox .Content .Price p {
+  font-size: 14px;
+  padding: 10px 0;
+  color: #737373;
+}
+
+.CarBox .Content .Price p img {
+  margin-right: 6px;
+}
+
+.CarBox .Content a {
+  display: block;
+  text-align: center;
+}
+
+.ServicesSection {
+  padding: 45px 0;
+  margin-top: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/service_banner.png);
+}
+
+.ServicesSection .ServiceBox {
+  position: relative;
+
+  clip-path: path('M 0 0 Q 5 20, 200 60 T 600 200 L 0 15999 Z');
+}
+
+.ServicesSection .ServiceBox .BoxImg {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.ServicesSection .ServiceBox .Content {
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid transparent;
+}
+
+.ServicesSection .ServiceBox .Content:hover {
+  border-bottom: 5px solid #ff9900;
+  background-color: rgba(233, 156, 41, 0.623);
+  color: white;
+
+  /* Changes text color to white on hover */
+}
+
+.ServicesSection .ServiceBox .Content .Details {
+  padding: 30px;
+  text-align: left;
+}
+
+.ServicesSection .ServiceBox .Content .Details img {
+  width: 60px !important;
+}
+
+.ServicesSection .ServiceBox .Content .Details h4 {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.ServicesSection .ServiceBox .Content .Details p {
+  color: #d9d9d9;
+}
+
+.ServicesSection .ServiceBox .Content .Details a {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.AdvantagesSection .Box {
+  display: flex;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.AdvantagesSection .Box .Content {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.AdvantagesSection .Box .Content h4 {
+  padding-bottom: 10px;
+}
+
+.TestimonialsSection .Box {
+  padding: 26px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 201, 12, 0.5);
+}
+
+.TestimonialsSection .Box:hover {
+  box-shadow: inset 0px 0px 10px 10px rgba(255, 153, 0, 0.16);
+}
+
+.TestimonialsSection .Box .Quote {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  justify-content: space-between;
+}
+
+.TestimonialsSection .Box .Profile {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.TestimonialsSection .Box .Profile img {
+  border-radius: 50px;
+}
+
+.TestimonialsSection .Box .Profile .Name {
+  padding-left: 20px;
+}
+
+.TestimonialsSection .Button {
+  width: auto;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.Footer {
+  margin-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #ff9900;
+  border-top: 2px solid #e02935;
+}
+
+.Footer p {
+  width: 70%;
+  padding: 16px 0;
+}
+
+.Footer .SocialIcon {
+  display: flex;
+  align-items: center;
+}
+
+.Footer .SocialIcon a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-right: 10px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff9900;
+}
+
+.Footer .SocialIcon a:hover {
+  background-color: #ff9900;
+}
+
+.Footer .SocialIcon a:hover svg path {
+  fill: #fff;
+}
+
+.Footer .SocialIcon a svg path {
+  fill: #ff9900;
+}
+
+.Footer h2 {
+  padding-bottom: 16px;
+}
+
+.Footer ul li {
+  padding-bottom: 8px;
+}
+
+.Footer ul li a {
+  display: block;
+  font-size: 16px;
+  color: #737373;
+}
+
+.Footer ul li a:hover {
+  color: #ff9900;
+}
+
+/*====================================================================================
+OUR SERVICES PAGE
+======================================================================================*/
+.MainSection {
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ff9900;
+}
+
+.MainSection h1 {
+  color: #fff;
+}
+
+.MainSection p {
+  color: #fff;
+}
+
+.ServiceSection .col-md-6 {
+  padding: 0;
+  margin: 0 -5px;
+}
+
+.ServiceSection .ImgLeft,
+.ServiceSection .ImgRight {
+  width: 100%;
+}
+
+.ServiceSection .ImgLeft {
+  border-radius: 4px 0 0 4px;
+  border-right: 10px solid #ff9900;
+}
+
+.ServiceSection .ImgRight {
+  border-radius: 0 4px 4px 0;
+  border-left: 10px solid #e02935;
+}
+
+.ServiceSection .Content.Left {
+  padding-left: 50px;
+}
+
+.ServiceSection .Content.Right {
+  padding-right: 50px;
+}
+
+.ServiceSection .Content h4 {
+  padding-bottom: 10px;
+}
+
+.ServiceSection .Content ul {
+  padding-bottom: 10px;
+}
+
+.ServiceSection .Content ul li {
+  display: flex;
+  padding: 3px 0;
+  font-size: 16px;
+  color: #737373;
+  align-items: start;
+}
+
+.ServiceSection .Content ul li img {
+  margin-right: 10px;
+}
+
+.ServiceSection .Content p {
+  padding-bottom: 10px;
+}
+
+/*====================================================================================
+DETAILS PAGE
+======================================================================================*/
+.DetailsSection .Image {
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.DetailsSection .Image img {
+  width: 100%;
+}
+
+.DetailsSection .Content {
+  padding-left: 20px;
+}
+
+.DetailsSection .Content .Heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+
+.DetailsSection .Content .Features img {
+  width: 24px;
+}
+
+.DetailsSection .Content .Brand {
+  display: flex;
+  padding: 25px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DetailsSection .Content .Offer {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.DetailsSection .Content .Offer h4 {
+  padding-bottom: 10px;
+}
+
+.DetailsSection .Content .Offer .Links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.DetailsSection .Content .Offer .Links a {
+  width: 32%;
+  padding: 12px;
+  margin: 10px 0;
+  display: block;
+  color: #737373;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #737373;
+}
+
+.DetailsSection .Content .Offer .Links a span {
+  font-size: 11px;
+}
+
+.DetailsSection .Content .Offer .Links a:last-child {
+  width: 100%;
+}
+
+.DetailsSection .Content .Offer .Links a:hover,
+.DetailsSection .Content .Offer .Links a:focus {
+  color: #ff9900;
+  border: 1px solid #ff9900;
+}
+
+.DetailsSection .Content .BtnFill {
+  display: block;
+  text-align: center;
+}
+
+/*====================================================================================
+BOOKING PAGE
+======================================================================================*/
+.BookingFrom {
+  padding-right: 20px;
+}
+
+.BookingFrom .Form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BookingFrom .Form .MainField {
+  width: 49%;
+  padding-bottom: 20px;
+}
+
+.BookingFrom .Form .MainField:last-child {
+  width: 100%;
+}
+
+.BookingFrom .Form .MainField .Field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BookingFrom .Form .MainField .Field .InputField {
+  width: 48%;
+}
+
+.BookingFrom .Form .MainField .form-label {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+}
+
+.BookingFrom .Form .MainField .InputField .form-select,
+.BookingFrom .Form .MainField .InputField .form-control {
+  height: 46px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #737373;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background-color: #fdfdfd;
+  border: 1px solid #f0f0f0;
+}
+
+.BookingFrom .Form .MainField .InputField textarea {
+  height: 100px !important;
+}
+
+.SearchForm .CeckBoxMain {
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SearchForm .CheckBox {
+  padding: 10px;
+}
+
+.SearchForm .CheckBox div {
+  padding: 10px;
+
+}
+
+.redBottomLine {
+  border-bottom: 1px solid #e02935;
+  display: flex;
+  align-items: center;
+}
+
+.roundImage {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  border: 1px solid #ff9900;
+  margin-left: 10px;
+  background-color: #ff9900;
+  padding: 5px;
+}
+
+.SearchForm .CheckBox .form-check-input {
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+}
+
+.SearchForm .CheckBox .form-check-input:checked {
+  background-color: #ff9900;
+  border-color: #ff9900;
+}
+
+.SearchForm .CheckBox .form-check-label {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.descriptionLabel {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.SearchForm .BtnFill {
+  width: 100%;
+}
+
+.SearchForm .BtnFill {
+  width: 100%;
+}
+
+.SearchForm .BtnBorderY {
+  width: 100%;
+}
+
+.PaymentButtons {
+  display: flex;
+  padding: 10px;
+}
+
+.Summary {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #ffc90c;
+}
+
+.Summary h2 {
+  padding-bottom: 10px;
+}
+
+.Summary .Details {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.Summary .Details .Image {
+  width: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ff9900;
+
+}
+
+.Summary .Details .Image img {
+  width: 100%;
+}
+
+.Summary .Details .Name {
+  width: 75%;
+  padding-left: 20px;
+}
+
+.Summary .Details .Name .Icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Summary .Price {
+  padding: 16px 0;
+  border-bottom: 1px dashed #f0f0f0;
+}
+
+.Summary .Price p {
+  display: flex;
+  padding: 3px 0;
+  font-size: 18px;
+  color: #4a4a4a;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Summary .Price p span {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.Summary .TotalPrice {
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ff9900;
+}
+
+.Summary .TotalPrice .Head h4 {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.Summary .TotalPrice h5 {
+  color: #ff9900;
+}
+
+/*====================================================================================
+THANK YOU PAGE
+======================================================================================*/
+.ThankSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ThankSection img {
+  margin-bottom: 30px;
+}
+
+.ThankSection p {
+  padding: 10px 0 40px;
+}
+
+/*====================================================================================
+ABOUT PAGE
+======================================================================================*/
+.AboutInfo img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.AboutInfo .Content {
+  width: 72%;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: -100px;
+  text-align: center;
+  position: relative;
+  border-radius: 6px;
+  padding: 30px 50px;
+  border: 2px dashed #fff;
+  background-color: #ff9900;
+}
+
+.AboutInfo .Content h2 {
+  padding-bottom: 10px;
+}
+
+.AboutInfo .Content h2,
+.AboutInfo .Content p {
+  color: #fff;
+}
+
+.RowVision {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.RowVision .col-md-6 {
+  padding: 0 30px;
+}
+
+.RowVision .col-md-6 h3 {
+  padding: 20px 0 10px;
+}
+
+.RowChoose img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.RowChoose ul {
+  padding-left: 30px;
+}
+
+.RowChoose ul li {
+  display: flex;
+  padding-bottom: 34px;
+}
+
+.RowChoose ul li:last-child {
+  padding-bottom: 0;
+}
+
+.RowChoose ul li .Icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9900;
+}
+
+.RowChoose ul li .Icon img {
+  width: auto;
+}
+
+.RowChoose ul li .Text {
+  width: 95%;
+  padding-left: 20px;
+}
+
+.RowChoose ul li .Text .Head_4 {
+  display: block;
+  padding-bottom: 10px;
+}
+
+/*====================================================================================
+CONTACT PAGE
+======================================================================================*/
+.ContactRow {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ffc90c;
+}
+
+.ContactRow .col-md-5 {
+  padding: 36px;
+  border-radius: 4px;
+  position: relative;
+  background-color: #ff9900;
+}
+
+.ContactRow .col-md-5::before {
+  bottom: 0;
+  left: 346px;
+  content: "";
+  width: 196px;
+  height: 130px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/circle.svg);
+}
+
+.ContactRow .col-md-5 .CustomHeading {
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.ContactRow .col-md-5 .CustomHeading h2,
+.ContactRow .col-md-5 .CustomHeading h3,
+.ContactRow .col-md-5 .CustomHeading p {
+  color: #fff;
+}
+
+.ContactRow .ContactInfo {
+  padding: 50px 0;
+}
+
+.ContactRow .ContactInfo li {
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+.ContactRow .ContactInfo li:last-child {
+  padding-bottom: 0;
+}
+
+.ContactRow .ContactInfo li img {
+  margin-right: 16px;
+}
+
+.ContactRow .ContactIcon {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+
+.ContactRow .ContactIcon li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6af03;
+  margin-right: 5px;
+}
+
+.ContactRow .ContactIcon li a svg path {
+  fill: #fff;
+}
+
+.ContactRow .ContactIcon li a:hover {
+  background-color: #fff;
+}
+
+.ContactRow .ContactIcon li a:hover svg path {
+  fill: #ff9900;
+}
+
+.ContactRow .BookingFrom {
+  position: relative;
+  padding: 20px 0 0 20px;
+}
+
+.ContactRow .BookingFrom::before {
+  left: 210px;
+  content: "";
+  height: 85px;
+  width: 180px;
+  bottom: -92px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/send.svg);
+}
+
+/*====================================================================================
+Terms PAGE
+======================================================================================*/
+.Text {
+  padding-bottom: 30px;
+}
+
+.Text h4 {
+  padding-bottom: 10px;
+}
+
+/*====================================================================================
+RESPONSIVE
+======================================================================================*/
+@media (max-width: 480px) {
+  .SearchForm {
+    padding: 0.5rem;
+  }
+
+  .cardBrand {
+    margin-left: -123px !important;
+
+  }
+
+  .cardBrand Img {
+    width: 40px !important;
+
+  }
+
+  .time-input::after {
+    content: "";
+    /* Unicode Clock Symbol */
+
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(27, 26, 26);
+    font-size: 16px;
+
+  }
+
+  .SearchForm .CheckBox {
+    padding: 10px;
+  }
+
+  .SearchForm .CheckBox div {
+    padding: 6px !important;
+  }
+
+  .container {
+    /* padding: 0 20px; */
+  }
+
+  .PaymentButtons {
+    display: block;
+  }
+
+  section {
+    padding-top: 40px;
+  }
+
+  .Head_1 {
+    font-size: 12px;
+  }
+
+  .Head_2 {
+    font-size: 24px;
+  }
+
+  .Head_3 {
+    font-size: 22px;
+  }
+
+  .Head_4 {
+    font-size: 20px;
+  }
+
+  .Head_5 {
+    font-size: 18px;
+  }
+
+  .Head_6 {
+    font-size: 16px;
+    
+  }
+
+  .Pra_1 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .Pra_1 br {
+    display: none;
+  }
+
+  .Pra_2 {
+    font-size: 16px;
+  }
+
+  .BtnFill,
+  .BtnBorder,
+  .BtnBorderY {
+    font-size: 14px;
+    padding: 9px 22px;
+  }
+
+  .CustomHeading {
+    padding-bottom: 20px;
+  }
+
+  .Stepper {
+    padding-bottom: 30px;
+  }
+
+  .Stepper li {
+    padding-right: 25px;
+  }
+
+  .Stepper li::before {
+    top: 14px;
+    right: 4px;
+    width: 15px;
+  }
+
+  .Stepper li span {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Stepper li span svg {
+    width: 20px;
+  }
+
+  .Stepper li h6 {
+    display: none;
+  }
+
+  /*====================================================================================
+  HOME PAGE
+  ======================================================================================*/
+  .Header {
+    padding: 10px 0;
+  }
+
+  .Header .container {
+    justify-content: center;
+  }
+
+  .Header .container .DesktopMenu {
+    display: none;
+  }
+
+  .Header .container .MobileMenu {
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: 12px 11px 12px 9px rgba(0, 0, 0, 0.16);
+  }
+
+  .Header .container .MobileMenu li a {
+    display: block;
+    font-size: 13px;
+    color: #4a4a4a;
+    text-align: center;
+  }
+
+  .Header .container .MobileMenu li a svg path {
+    fill: #737373;
+  }
+
+  .Header .container .MobileMenu li a span {
+    display: block;
+  }
+
+  .Header .container .MobileMenu li a:hover,
+  .Header .container .MobileMenu li a.active {
+    color: #ff9900 !important;
+    font-weight: 600;
+  }
+
+  .Header .container .MobileMenu li a:hover svg path,
+  .Header .container .MobileMenu li a.active svg path {
+    fill: #ff9900;
+  }
+
+  .HomeSection {
+    text-align: center;
+    padding-top: 15px !important;
+    padding-bottom: 40px;
+  }
+
+  .HomeSection h1 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+  .HomeSection .Button {
+    padding-top: 15px;
+    justify-content: center;
+  }
+
+  .HomeSection .row {
+    flex-direction: column;
+  }
+
+  .HomeSection .col-md-7 img:first-child {
+    display: none;
+  }
+
+  .HomeSection .col-md-7 img:last-child {
+    display: none;
+
+  }
+
+  .SearchSection {
+    padding: 20px 0;
+  }
+
+  .SearchSection .SearchFrom {
+    padding: 20px;
+    display: block;
+  }
+
+  .SearchSection .SearchFrom .Field {
+    width: 100%;
+  }
+
+  .SearchSection .SearchFrom .BorderLine {
+    width: 100%;
+    height: 0.5px;
+    margin: 5px 0;
+  }
+
+  .SearchSection .SearchFrom .BtnFill {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .LogoSection .container {
+    flex-wrap: wrap;
+  }
+
+  .LogoSection .container img {
+    width: 20%;
+    margin: 1%;
+  }
+
+  .CarSection .Button {
+    margin: 0 auto;
+  }
+
+  .CarBox {
+    padding: 6px;
+    margin-bottom: 16px;
+  }
+
+  .CarBox .Image {
+    height: 230px;
+    padding: 20px;
+  }
+
+  .CarBox .Image .Tag {
+    top: 10px;
+    left: 10px;
+  }
+
+  .CarBox .Content .Price {
+    padding-bottom: 15px;
+  }
+
+  .CarBox .Content .Price h5 {
+    font-size: 22px;
+  }
+
+  .CarBox .Content .Price h5 span {
+    font-size: 14px;
+  }
+
+  .CarBox .Content .Price p {
+    font-size: 14px;
+  }
+
+  .CarBox .Content .Price p img {
+    margin-right: 6px;
+  }
+
+  .ServicesSection {
+    padding: 30px 0;
+    margin-top: 40px;
+  }
+
+  .ServicesSection .ServiceBox {
+    margin-bottom: 20px;
+  }
+
+  .ServicesSection .ServiceBox .BoxImg {
+    width: 100%;
+  }
+
+  .ServicesSection .ServiceBox .Content .Details {
+    padding: 10px 20px;
+  }
+
+  .ServicesSection .ServiceBox .Content .Details img {
+    width: 60px;
+  }
+
+  .ServicesSection .ServiceBox .Content .Details a {
+    margin-top: 20px;
+  }
+
+  .AdvantagesSection .Box {
+    padding-bottom: 25px;
+  }
+
+  .AdvantagesSection .container .Box img {
+    width: 50px;
+    align-self: start;
+  }
+
+  .TestimonialsSection {
+    padding-top: 15px;
+  }
+
+  .TestimonialsSection .Box {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .TestimonialsSection .Box .Profile img {
+    width: 45px;
+  }
+
+  .TestimonialsSection .Box .Profile .Name {
+    padding-left: 15px;
+  }
+
+  .TestimonialsSection .Button {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .Footer {
+    padding-top: 50px;
+  }
+
+  .Footer .col-md-6 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .Footer .col-md-2 {
+    flex: 30.33%;
+    width: 30.33%;
+  }
+
+  .Footer p {
+    width: 100%;
+  }
+
+  .Footer .SocialIcon {
+    justify-content: center;
+  }
+
+  .Footer .SocialIcon a {
+    width: 30px;
+  }
+
+  .Footer h2 {
+    padding-bottom: 10px;
+  }
+
+  .Footer ul li {
+    padding-bottom: 5px;
+  }
+
+  .Footer ul li a {
+    font-size: 12px;
+  }
+
+  /*====================================================================================
+  OUR SERVICES PAGE
+  ======================================================================================*/
+  .MainSection {
+    padding: 15px;
+  }
+
+  .ServiceSection .col-md-6 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .ServiceSection .ImgLeft,
+  .ServiceSection .ImgRight {
+    display: none;
+  }
+
+  .ServiceSection .Content.Left {
+    padding: 0 15px;
+    border-left: 5px solid #e02935;
+  }
+
+  .ServiceSection .Content.Right {
+    padding: 10px 15px;
+    border-left: 5px solid #ff9900;
+  }
+
+  .ServiceSection .Content ul li {
+    font-size: 14px;
+  }
+
+  /*====================================================================================
+  DETAILS PAGE
+  ======================================================================================*/
+  .DetailsSection .Content {
+    padding: 20px 0;
+  }
+
+  .DetailsSection .Content .Features img {
+    width: 20px;
+  }
+
+  .DetailsSection .Content .Brand {
+    padding: 15px 0;
+  }
+
+  .DetailsSection .Content .Offer {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .DetailsSection .Content .Offer .Links a {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .DetailsSection .Content .Offer .Links a span {
+    font-size: 10px;
+  }
+
+  .DetailsSection .Content .BtnFill {
+    display: block;
+  }
+
+  /*====================================================================================
+  BOOKING PAGE
+  ======================================================================================*/
+  .BookingSection .row {
+    flex-direction: column;
+  }
+
+  .BookingFrom {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+
+  .BookingFrom .Form {
+    display: flex;
+  }
+
+  .BookingFrom .Form .MainField {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+  .BookingFrom .Form .MainField .Field {
+    display: flex;
+  }
+
+  .BookingFrom .Form .MainField .Field .InputField {
+    width: 48%;
+  }
+
+  .BookingFrom .Form .MainField .form-label {
+    font-size: 14px;
+  }
+
+  .BookingFrom .Form .MainField .InputField .form-select,
+  .BookingFrom .Form .MainField .InputField .form-control {
+    height: 46px;
+  }
+
+  .BookingFrom .Form .MainField .InputField textarea {
+    height: 100px !important;
+  }
+
+  .BookingFrom .CeckBoxMain {
+    flex-wrap: wrap;
+  }
+
+  .BookingFrom .CheckBox {
+    padding-bottom: 20px;
+  }
+
+  .BookingFrom .CheckBox .form-check-input {
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  .BookingFrom .CheckBox .form-check-label {
+    font-size: 14px;
+  }
+
+  .descriptionLabel {
+    font-size: 14px;
+  }
+
+  .BookingFrom .BtnFill {
+    width: 100%;
+  }
+
+  .Summary {
+    padding: 0.5rem;
+  }
+
+  .Summary .Details {
+    padding: 10px 0;
+  }
+
+  .Summary .Details .Name {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .Summary .Details .Name .Icon .Features img {
+    width: 14px;
+  }
+
+  .Summary .Details .Name .Icon .Rating img {
+    width: 12px;
+  }
+
+  .Summary .Price p {
+    font-size: 14px;
+  }
+
+  .Summary .Price p span {
+    font-weight: 600;
+
+  }
+
+  .Summary .TotalPrice .Head h4 {
+    font-size: 16px;
+  }
+
+  /*====================================================================================
+  THANK YOU PAGE
+  ======================================================================================*/
+  .ThankSection img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .ThankSection p {
+    padding: 10px 0 30px;
+  }
+
+  /*====================================================================================
+  ABOUT PAGE
+  ======================================================================================*/
+  .AboutInfo img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .AboutInfo .Content {
+    width: 80%;
+    padding: 20px;
+    margin-top: -10px;
+  }
+
+  .AboutInfo .Content h2 {
+    padding-bottom: 10px;
+  }
+
+  .RowVision {
+    padding-top: 20px;
+  }
+
+  .RowVision .col-md-6 {
+    padding: 20px;
+  }
+
+  .RowVision .col-md-6 h3 {
+    padding: 10px;
+  }
+
+  .PaddingBottom {
+    margin-bottom: 20px;
+  }
+
+  .input-container {
+    width: 100% !important;
+  }
+
+  .RowChoose ul {
+    padding-left: 0;
+  }
+
+  .RowChoose ul li {
+    padding-bottom: 20px;
+  }
+
+  .RowChoose ul li .Icon {
+    width: 50px;
+  }
+
+  .RowChoose ul li .Icon img {
+    width: auto;
+    display: block;
+  }
+
+  .RowChoose ul li .Text {
+    width: 85%;
+  }
+
+  /*====================================================================================
+  CONTACT PAGE
+  ======================================================================================*/
+  .ContactRow {
+    padding: 10px;
+  }
+
+  .ContactRow .col-md-5 {
+    padding: 25px;
+  }
+
+  .ContactRow .col-md-5::before {
+    content: none;
+  }
+
+  .ContactRow .col-md-5 .CustomHeading {
+    text-align: left;
+  }
+
+  .ContactRow .ContactInfo {
+    padding: 30px 0;
+  }
+
+  .ContactRow .ContactInfo li {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+
+  .ContactRow .BookingFrom {
+    padding: 20px 0;
+  }
+
+  .ContactRow .BookingFrom::before {
+    content: none;
+  }
+
+  .copyright {
+
+    padding-bottom: 75px !important;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
+
+.disabled-link {
+  pointer-events: none;
+  text-decoration: none;
+  background: #f6f7f9;
+  color: #697381;
+  border: none;
+}
+
+.CarBox .Image .Feature {
+  bottom: 5px;
+  right: 5px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  position: absolute;
+  display: inline-flex;
+  /* Ensures items are aligned horizontally */
+  align-items: center;
+  /* Vertically aligns icons and text */
+  gap: 6px;
+  /* Adds spacing between each item */
+  white-space: nowrap;
+  /* Prevents wrapping of content */
+  color: #e02935;
+  background-color: rgba(255, 153, 0, 0.3);
+}
+
+.colorRed {
+  color: #e02935 !important;
+  font-weight: bold !important;
+}
+
+.error-text {
+  color: #ff9900 !important;
+
+  font-size: small;
+  font-style: italic;
+}
+
+.colorYellow {
+  color: #ff9900 !important;
+  font-weight: bold !important;
+}
+
+.BoxImg {
+  width: 50px;
+  align-self: start;
+}
+
+.cardBrand {
+  justify-items: right;
+  border: 2px solid #e9ecef;
+  border-left: none;
+  margin-left: -137px;
+  border-radius: 8px;
+  padding-top: 4px !important;
+}
+
+.cardBrand Img {
+  width: 45px;
+  background-color: white;
+
+
+}
+
+.cardField {
+  display: flex;
+}
+
+.form-control-card {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 16px;
+  color: #212529;
+  transition: all 0.3s ease;
+
+
+}
+
+.strikeHeading {
+  text-decoration: line-through;
+  font-size: x-large;
+}
+
+.makeFlex {
+  display: flex;
+}
+
+.makeGrid {
+  display: grid;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*====================================================================================
+Terms & Cndition
+======================================================================================*/
+.TermsSection {
+  color: #737373;
+}
+
+.TermsSection .Head_3 {
+  color: #ff9900;
+  padding-bottom: 10px;
+}
+
+.TermsSection .Text {
+  border-left: 5px solid #ff9900;
+  padding-left: 2%;
+  margin-bottom: 10px;
+}
+
+
+.TermsSection .TextAlt {
+  border-left: 5px solid #df2935;
+  padding-left: 2%;
+  margin-bottom: 10px;
+}
+
+.TermsSection ul li img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.TermsSection ul li {
+  margin-left: 1rem;
+  padding-bottom: 5px;
+  
+}
+
+.anchor {
+  font-size: 14px;
+}
+
+.summaryTotal {
+  /* border-top: 1px solid #df2935;
+  border-bottom: 1px solid #df2935; */
+  background: antiquewhite;
+}
+
+.subSummarySection {
+  margin-top: 2px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px dashed #ffc90c;
+}
+
+.copyright {
+  border-bottom: 2px solid #e02935;
+}
+
+.thankyouImg {
+  height: 200px;
+  width: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #df2935;
+  color: white;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  white-space: nowrap;
+  pointer-events: none;
+  /* Prevents flickering */
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltip-container img {
+  height: 25px;
+  width: 25px;
+
+}
+
+.rate-label {
+  font-size: smaller;
+  color: #df2935;
+  /* border: 2px solid #df2935; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+
+
+}
+
+.leftAlignText {
+  text-align: left !important;
+}
+
+.imageBorder {
+  border: 2px dashed #ff9900;
+}
+
+
+.state-pay-visible.previous-state-hidden .ButtonContainer--pay,
+.state-pay-visible.previous-state-use-visible .ButtonContainer--pay,
+.state-save-visible.previous-state-hidden .ButtonContainer--save,
+.state-save-visible.previous-state-pay-visible .ButtonContainer--save {
+  display: none !important;
+}
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+#link-pay-text {
+  display: none;
+}
+
+.OffsetContainer {
+  display: none !important;
+}
+
+
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  width: 50%;
+  right: 25%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  z-index: 1000;
+  background-color: #e05b64;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px #ff9900;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 0.5s forwards, fadeOut 0.5s 4.5s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+
+
+}
+
+
+
+.toast button {
+  background: none;
+  border: none;
+  color: #e61b1b;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+
+.anim-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* Full screen center */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99999;
+  /* Optional */
+}
+
+.anim-logo {
+  width: 150px;
+  animation: pulse 1.5s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+@keyframes wheel-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffcccc;
+  color: #900;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  margin-top: 4px;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip-wrapper.error select {
+  border: 1px solid #e02935;
+}
+
+.tooltip-wrapper.error::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #f8d7da;
+
+
+  color: #e02935;
+  padding: 5px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  margin-top: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.tooltip-wrapper.error::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 15px; /* adjust as needed to align with field */
+  margin-bottom: 5px;
+  width: 0;
+  height: 0;
+  
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f8d7da; /* match tooltip background */
+  z-index: 10;
+}
