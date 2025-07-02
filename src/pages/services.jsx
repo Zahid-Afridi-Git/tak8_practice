@@ -2,9 +2,44 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/loader";
+
 const Services = () => {
   const [loading, setLoading] = useState(true);
+  
   useEffect(() => {
+    // SEO Meta Tags
+    document.title = "Flexible Car Hire Perth | Hourly & Long-Term Rental – TAK8";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Hire a car in Perth by the hour, day, or week. Enjoy clear, affordable pricing and a hassle-free booking experience with TAK8.');
+    }
+    
+    // Set or create Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Hourly & Long-Term Car Hire – TAK8 Perth');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'TAK8 makes car hire in Perth easy and flexible. Choose from hourly, daily, or long-term rentals to fit your trip.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.head.appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+
     const hash = window.location.hash;
 
     if (hash) {
@@ -15,6 +50,7 @@ const Services = () => {
     }
     setTimeout(() => setLoading(false), 1000);
   }, []);
+
   return (
     <>
       {loading ? <Loader /> : ""}

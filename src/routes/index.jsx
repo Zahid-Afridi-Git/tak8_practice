@@ -15,6 +15,8 @@ import ContactUs from "../pages/contactUs";
 import Payment from "../pages/booking/payment";
 import TermsCondition from "../pages/terms";
 import PrivacyPolicy from "../pages/privacy";
+import Blog from "../pages/blog/index";
+import BlogDetail from "../pages/blog/blogDetail";
 
 const AppRoutes = () => {
   return (
@@ -34,6 +36,8 @@ const AppRoutes = () => {
       <Route path="/payment" element={<Payment />} />
       <Route path="/terms-conditions" element={<TermsCondition />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogDetail />} />
       
     </Routes>
   );

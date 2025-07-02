@@ -19,7 +19,40 @@ const ContactUs = () => {
 
   const [status, setStatus, ,] = useState("");
   const [isEmailSent, setIsEmailSent] = useState(false);
+  
   useEffect(() => {
+    // SEO Meta Tags
+    document.title = "Contact TAK8 | Perth Car Rental Support";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Need help with your Perth car rental? Contact TAK8 for fast support, quotes, and friendly service.');
+    }
+    
+    // Set or create Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Talk to TAK8 – Perth Car Hire Help');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Reach out to our Perth team for quick answers, quotes, or friendly support');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.head.appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
 
     setTimeout(() => setLoading(false), 500);
   }, []);
@@ -180,7 +213,7 @@ const ContactUs = () => {
                 <h2 class="Head_1">GET IN TOUCH</h2>
 
                 <p class="Pra_1">
-                  For customized rental solutions, please email us or give us a call—we’re happy to assist you!
+                  For customized rental solutions, please email us or give us a call—we're happy to assist you!
                 </p>
               </div>
               <ul class="ContactInfo">

@@ -19,8 +19,8 @@ const Header = () => {
         <div class="container">
           <img
             className="cursor-pointer"
-            src="img/logo.png"
-            alt="Logo"
+            src="/img/logo.png"
+            alt="TAK8 Car Rental Logo"
             onClick={() => routeTo("/")}
           />
           <ul class="DesktopMenu cursor-pointer">
@@ -57,6 +57,14 @@ const Header = () => {
                 Trucks & Utes
               </a>
             </li> */}
+            <li>
+              <a
+                onClick={() => routeTo("/blog")}
+                class={`${selectedRoute === "/blog" ? "active" : ""}`}
+              >
+                Blog
+              </a>
+            </li>
             <li>
               <a
                 onClick={() => routeTo("/about-us")}
@@ -121,6 +129,17 @@ const Header = () => {
                 <span> Trucks & Utes</span>
               </a>
             </li> */}
+            <li>
+              <a
+                onClick={() => routeTo("/blog")}
+                class={`${selectedRoute === "/blog" ? "active" : ""}`}
+              >
+                <svg width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M3.33333 2.5C2.89583 2.5 2.53125 2.65625 2.23958 2.96875C1.94792 3.28125 1.79167 3.64583 1.79167 4.08333V15.9167C1.79167 16.3542 1.94792 16.7188 2.23958 17.0313C2.53125 17.3438 2.89583 17.5 3.33333 17.5H16.6667C17.1042 17.5 17.4688 17.3438 17.7604 17.0313C18.0521 16.7188 18.2083 16.3542 18.2083 15.9167V4.08333C18.2083 3.64583 18.0521 3.28125 17.7604 2.96875C17.4688 2.65625 17.1042 2.5 16.6667 2.5H3.33333ZM3.33333 4.16667H16.6667V7.5H3.33333V4.16667ZM3.33333 9.16667H8.33333V15.8333H3.33333V9.16667ZM10 9.16667H16.6667V15.8333H10V9.16667Z"/>
+                </svg>
+                <span>Blog</span>
+              </a>
+            </li>
             <li>
               <a
                 onClick={() => routeTo("/about-us")}

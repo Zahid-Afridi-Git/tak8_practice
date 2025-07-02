@@ -1,0 +1,18 @@
+Blog Images Placeholder
+
+This directory should contain the following blog images:
+- perth-road-trip.jpg
+- car-rental-tips.jpg
+- rottnest-island.jpg
+- swan-valley.jpg
+- driving-safety.jpg
+- fremantle-markets.jpg
+- new-fleet.jpg
+- kings-park.jpg
+- fuel-efficiency.jpg
+- cottesloe-beach.jpg
+- seasonal-driving.jpg
+- pinnacles-desert.jpg
+
+For now, the blog will use placeholder images from existing assets.
+Replace these with actual blog images when available. 

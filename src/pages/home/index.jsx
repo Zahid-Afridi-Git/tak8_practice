@@ -65,6 +65,41 @@ const Home = () => {
     getAllBookings();
     GoogleReviews();
     setTimeout(() => setLoading(false), 500);
+
+    // SEO Meta Tags
+    // Set document title
+    document.title = "Perth Car Rental | Hourly & Affordable Car Hire – TAK8";
+    
+    // Set meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'TAK8 offers flexible Perth car rental with hourly and long-term options. Enjoy simple booking, no hidden fees, and a wide range of vehicles.');
+    }
+    
+    // Set or create Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Affordable Perth Car Rental – TAK8');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Book your Perth car hire with TAK8. Choose hourly or long-term rentals and enjoy transparent pricing with no extra charges.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.head.appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
   }, []);
 
   const onInputChange = (e) => {

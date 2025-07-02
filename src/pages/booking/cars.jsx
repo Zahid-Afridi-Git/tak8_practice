@@ -7,6 +7,7 @@ import Stepper from "../components/stepper";
 import Loader from '../components/loader';
 import moment from "moment";
 import { useLocation } from "react-router-dom";
+
 const Cars = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
@@ -28,6 +29,39 @@ const Cars = () => {
   console.log('fromfind', fromfind);
 
   useEffect(() => {
+    // SEO Meta Tags
+    document.title = "Best Rental Cars in Perth | Hatchbacks, Sedans, SUVs – TAK8";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Find the best rental cars in Perth with TAK8. Our fleet of late-model hatchbacks, sedans, and SUVs is perfect for city driving or weekend adventures.');
+    }
+    
+    // Set or create Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Wide Range of Cars for Hire – TAK8 Perth');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Explore our Perth rental fleet, from compact cars to large SUVs. We have a car for every need.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.head.appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+
     initializeCars();
     setTimeout(() => setLoading(false), 1000);
   }, []);

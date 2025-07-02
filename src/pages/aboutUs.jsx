@@ -2,11 +2,45 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Loader from "./components/loader";
 import { useEffect, useState } from "react";
+
 const AboutUs = () => {
   const [loading, setLoading] = useState(true);
+  
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    // SEO Meta Tags
+    document.title = "About TAK8 | Perth Car Hire Experts";
     
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'TAK8 is your trusted local partner for car rental in Perth. Count on our friendly team, quality vehicles, and a hassle-free booking experience every time.');
+    }
+    
+    // Set or create Open Graph tags
+    let ogTitle = document.querySelector('meta[property="og:title"]');
+    if (!ogTitle) {
+      ogTitle = document.createElement('meta');
+      ogTitle.setAttribute('property', 'og:title');
+      document.head.appendChild(ogTitle);
+    }
+    ogTitle.setAttribute('content', 'Get to Know TAK8 – Perth Car Rental');
+    
+    let ogDescription = document.querySelector('meta[property="og:description"]');
+    if (!ogDescription) {
+      ogDescription = document.createElement('meta');
+      ogDescription.setAttribute('property', 'og:description');
+      document.head.appendChild(ogDescription);
+    }
+    ogDescription.setAttribute('content', 'Discover how TAK8 is changing car rental in Perth with flexible, fair, and customer-first service.');
+    
+    let ogType = document.querySelector('meta[property="og:type"]');
+    if (!ogType) {
+      ogType = document.createElement('meta');
+      ogType.setAttribute('property', 'og:type');
+      document.head.appendChild(ogType);
+    }
+    ogType.setAttribute('content', 'website');
+    
+    setTimeout(() => setLoading(false), 2000);
   }, []);
   //const handleLoad = () => {setLoading(false)}
   return (
