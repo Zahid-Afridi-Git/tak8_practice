@@ -2,6 +2,7 @@ import axios from "axios";
 import Summary from "../components/summary";
 import ReactDOMServer from "react-dom/server";
 import moment from "moment";
+import config from "../../utils/config";
 const generateOrderNumber = () => {
   return Math.floor(10000 + Math.random() * 90000);
 }
@@ -334,7 +335,7 @@ const getOrderHTML = (data, calculateRate, totalPayment, discountAmount, taxAmou
 const sendBookingEmail = async (data, calculateRate, totalPayment, discountAmount, taxAmount, calculateExtra) => {
   console.log('discountAmount',discountAmount);
   
-  const newendpoint = "https://api.tak8.com.au/email/send";
+          const newendpoint = config.api.emailEndpoint;
   const { car, rate, booking, customer, extras, payment_type } = data;
 
   const extrasList = extras

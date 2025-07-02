@@ -1,6 +1,7 @@
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Loader from './components/loader';
+import config from '../utils/config';
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -92,11 +93,11 @@ const ContactUs = () => {
 
     try {
 
-      const emailEndpoint = "https://api.tak8.com.au/email/send";
+      const emailEndpoint = config.api.emailEndpoint;
 
 
       const customerEmailData = {
-        to: 'ammad@anata.digital',
+        to: config.contact.email,
         subject: "New Contact Form Submission from " + formData.first_name + " " + formData.last_name,
         html: `<!DOCTYPE html>
           <html>

@@ -1,7 +1,8 @@
 import axios from "axios";
+import config from "../utils/config";
 
 const axiosInstance = axios.create({
-  baseURL: "https://api.tak8.com.au/",
+  baseURL: config.api.baseURL + "/",
 });
 
 
