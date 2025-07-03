@@ -92,7 +92,7 @@ const Blog = () => {
           <div className="CustomHeading text-center">
             <h1 className="Head_1">Travel & Tips</h1>
             <h2 className="Head_2">Explore Perth & Beyond</h2>
-            <p className="Pra_1">
+            <p className="Pra_1" style={{ textAlign: 'center', margin: '0 auto', display: 'block', width: '100%', maxWidth: '600px' }}>
               Your ultimate guide to Perth and Western Australia. Discover hidden gems, get expert car rental tips, and plan unforgettable adventures.
             </p>
           </div>

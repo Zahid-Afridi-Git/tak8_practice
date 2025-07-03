@@ -19,6 +19,12 @@ import Blog from "../pages/blog/index";
 import BlogDetail from "../pages/blog/blogDetail";
 
 const AppRoutes = () => {
+  // Don't handle sitemap.xml or robots.txt routes in React Router
+  const currentPath = window.location.pathname;
+  if (currentPath === '/sitemap.xml' || currentPath === '/robots.txt') {
+    return null;
+  }
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

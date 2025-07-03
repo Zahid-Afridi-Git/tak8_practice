@@ -1,0 +1,5 @@
+# Serve sitemap.xml directly without React Router interference
+/sitemap.xml   /sitemap.xml   200!
+
+# All other routes go to React app
+/*    /index.html   200 
