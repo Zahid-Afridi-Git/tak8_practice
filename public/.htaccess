@@ -1,16 +1,50 @@
+Options -MultiViews
 RewriteEngine On
 
-# Serve sitemap.xml with correct content-type
+# Security Headers
+Header always set X-Content-Type-Options nosniff
+Header always set X-Frame-Options DENY
+Header always set X-XSS-Protection "1; mode=block"
+
+# Serve sitemap.xml and robots.txt with correct content-type and caching
 <Files "sitemap.xml">
   Header set Content-Type "application/xml; charset=utf-8"
+  Header set Cache-Control "public, max-age=86400"
 </Files>
 
-# Handle React Router
+<Files "robots.txt">
+  Header set Content-Type "text/plain; charset=utf-8"
+  Header set Cache-Control "public, max-age=86400"
+</Files>
+
+# Gzip compression for better performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json text/xml application/xml
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpg "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# Handle React Router - CRITICAL for SPA routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/sitemap\.xml$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots\.txt$ [NC]
+RewriteCond %{REQUEST_URI} !^/favicon\.ico$ [NC]
+RewriteCond %{REQUEST_URI} !^/favicon\.png$ [NC]
+RewriteCond %{REQUEST_URI} !^/manifest\.json$ [NC]
+RewriteCond %{REQUEST_URI} !^/(css|js|img)/ [NC]
 RewriteRule . /index.html [L]
 
-# Ensure sitemap.xml is served directly
-RewriteCond %{REQUEST_URI} ^/sitemap\.xml$ [NC]
-RewriteRule ^(.*)$ /$1 [L] 
+# Force HTTPS (optional but recommended)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 

@@ -5,6 +5,7 @@ ZIA ULLAH
 ======================================================================================*/
 html {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -4238,4 +4239,41 @@ ENHANCED BLOG STYLES
     padding: 8px 12px;
     font-size: 12px;
   }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper spacing for anchor targets */
+.blog-content-wrapper h2[id],
+.blog-content-wrapper h3[id] {
+  scroll-margin-top: 100px; /* Adjust based on header height */
+  padding-top: 20px;
+}
+
+/* Table of contents styling */
+.table-of-contents a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.table-of-contents a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Ensure anchor links work properly */
+.blog-content-wrapper a[href^="#"] {
+  cursor: pointer;
+}
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  margin-top: 20px;
 }

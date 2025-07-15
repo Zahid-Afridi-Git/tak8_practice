@@ -72,4 +72,35 @@
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://tak8.com.au/blog/10-ways-get-cheap-car-hire-perth</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tak8.com.au/blog/7-common-car-hire-mistakes-avoid</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tak8.com.au/blog/top-5-perth-day-trips-rental-car</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tak8.com.au/blog/top-5-scenic-road-trips-perth-car</loc>
+    <lastmod>2024-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tak8.com.au/blog/long-term-car-hire-perth-benefits-money-saving-tips</loc>
+    <lastmod>2024-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset> 

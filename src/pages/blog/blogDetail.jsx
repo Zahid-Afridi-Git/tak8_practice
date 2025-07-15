@@ -79,6 +79,65 @@ const BlogDetail = () => {
     };
   }, [currentPost, navigate, slug]);
 
+  // Comprehensive anchor navigation hook
+  const useAnchorNavigation = () => {
+    useEffect(() => {
+      const scrollToElement = (targetId) => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          const headerOffset = 80; // Adjust based on your header height
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      };
+
+      // Handle click events on anchor links
+      const handleAnchorClick = (e) => {
+        const target = e.target.closest('a');
+        if (target && target.getAttribute('href')?.startsWith('#')) {
+          e.preventDefault();
+          const targetId = target.getAttribute('href').substring(1);
+          
+                  // Update URL hash without triggering page scroll
+        window.history.replaceState(null, null, `#${targetId}`);
+          
+          // Scroll to element
+          scrollToElement(targetId);
+        }
+      };
+
+      // Handle URL hash changes
+      const handleHashChange = () => {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+          setTimeout(() => scrollToElement(hash), 100);
+        }
+      };
+
+      // Handle initial load with hash
+      if (window.location.hash) {
+        setTimeout(() => handleHashChange(), 100);
+      }
+
+      // Add event listeners
+      document.addEventListener('click', handleAnchorClick);
+      window.addEventListener('hashchange', handleHashChange);
+      
+      return () => {
+        document.removeEventListener('click', handleAnchorClick);
+        window.removeEventListener('hashchange', handleHashChange);
+      };
+    }, []);
+  };
+
+  // Use the hook in your component
+  useAnchorNavigation();
+
   const handleBackToList = () => {
     sessionStorage.setItem('shouldRestoreScroll', 'true');
     navigate("/blog");

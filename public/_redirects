@@ -1,5 +1,8 @@
 # Serve sitemap.xml directly without React Router interference
 /sitemap.xml   /sitemap.xml   200!
 
-# All other routes go to React app
+# Serve robots.txt directly
+/robots.txt    /robots.txt    200!
+
+# All other routes go to React app (this enables client-side routing)
 /*    /index.html   200 
